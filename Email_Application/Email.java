@@ -8,7 +8,7 @@ public class Email {
     private String password;
     private String department;
     private String email;
-    private int mailBoxCapacity;
+    private int mailBoxCapacity = 500;
     private int deafaultPasswordLength = 14;
     private String alternateEmail;
     private String companySuffix = "rdf.com";
@@ -60,9 +60,30 @@ public class Email {
     }
 
     //Set the mailbox capacity 
+    public void setMailBoxCapacity(int capacity){
+        this.mailBoxCapacity =capacity;
+    }
 
     //Set the alternate email
+    public void setAlternateEmail(String altEmail){
+        this.alternateEmail = altEmail;
+    }
 
     //Change the password
+    public void changePassword(String password){
+        this.password = password;
+    }
+
+    public int getMailBoxCapacity(){
+        return mailBoxCapacity;
+    }
+
+    public String getAlternativeEmail(){
+        return alternateEmail;
+    }
+
+    public String getPassword(){
+        return password;
+    }
 
 }
