@@ -1,3 +1,5 @@
+package Email_Application;
+
 public class Email {
     private String firstname;
     private String lastname;
@@ -7,6 +9,11 @@ public class Email {
     private String alternateEmail;
 
     //Constructor to recive the first and last name 
+    public Email(String firstname, String lastname){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        System.out.println("EMAIL CREATED: "+ this.firstname + " "+ this.lastname);
+    }
 
     // Ask for the department 
 
